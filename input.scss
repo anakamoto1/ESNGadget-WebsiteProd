@@ -1,0 +1,341 @@
+/*--- Variables --- */
+
+$header-font: 'Product Sans',
+sans-serif;
+$main-font: 'Cousine',
+monospace;
+
+$nav-footer-spacing: 30px 0;
+$section-spacing: 5% 11%;
+
+$red: #de3131;
+$light-grey: #ededed;
+$grey: #171717;
+
+/*--- Sections --- */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    background: black;
+    color: white;
+}
+
+.wrapper {
+    margin: 0 auto;
+}
+
+.section {
+    padding: $section-spacing;
+    overflow: hidden;
+}
+
+.header {}
+
+.banner {
+
+    .left {
+        width: 55% !important;
+    }
+
+    .right {
+        width: 35% !important;
+        padding: 3% 5%;
+    }
+}
+
+.how {
+    background-color: $grey;
+}
+
+.features {}
+
+.faqs {
+    background: $grey;
+
+    .question {
+        margin: 30px auto;
+    }
+
+    #question {
+        font-weight: bold;
+    }
+}
+
+.contact {}
+
+footer {}
+
+/* ---  Navigation --- */
+
+.primary-nav {
+    width: 90%;
+    margin: 0 auto;
+    float: clear;
+    overflow: auto;
+
+    ul {
+        display: inline-block;
+        float: right;
+        margin-top: 3%;
+        list-style: none;
+
+    }
+
+    li {
+        display: inline-block;
+        padding: 15px 20px;
+        color: white;
+    }
+
+    li:last-child {
+        a {
+            border: 1px solid white !important;
+            padding: 10px 35px !important;
+
+
+        }
+
+        a:hover {
+            background-color: white !important;
+            color: black;
+            opacity: 1;
+        }
+    }
+
+    a:hover {
+        opacity: .5;
+    }
+
+    h1 {
+        width: 30%;
+        float: left;
+        color: white;
+        font-size: 20px;
+        margin-top: 50px;
+    }
+}
+
+
+/* --- Buttons --- */
+
+#banner-btn {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+
+    margin-top: 30px;
+    padding: 15px 40px;
+
+    font-size: inherit;
+    font-weight: 700;
+    font-family: inherit;
+}
+
+/* --- Images --- */
+
+#logo {
+    width: 20%;
+    height: auto;
+}
+
+#banner {
+    width: 100%;
+}
+
+#icon {
+    width: 70px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+#how {
+    width: 500px;
+}
+
+/* --- Forms --- */
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin: 6px 0 16px;
+    resize: none;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: transparent;
+    color: black;
+    padding: 10px 30px;
+    border: 3px solid $red;
+    cursor: pointer;
+
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 700;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+/* --- Columns --- */
+
+.two-column {
+    float: clear;
+    overflow: auto;
+    margin-top: 20px;
+
+    .left {
+        float: left;
+        width: 45%;
+
+
+    }
+
+    .right {
+        float: right;
+        width: 45%;
+    }
+}
+
+.three-column {
+    margin: 20px auto;
+    overflow: hidden;
+
+    .left {
+        float: left;
+        width: 30%;
+    }
+
+    .right {
+        float: right;
+        width: 30%;
+    }
+
+    .center {
+        display: inline-block;
+        width: 30%;
+    }
+
+}
+
+.row {
+    display: table;
+    width: 100%;
+}
+
+.col {
+    display: table-cell;
+    padding: 16px;
+    vertical-align: middle;
+    width: 50%;
+}
+
+
+/*--- Typography --- */
+
+body {
+    font-family: $main-font;
+    font-size: 16px;
+
+}
+
+h1 {
+    font-family: $main-font;
+    font-size: 50px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: $main-font;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px auto 30px;
+
+
+}
+
+h2::after {
+    background: $red none repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 5px;
+    margin: 15px auto;
+    width: 50px;
+}
+
+h3 {
+    font-family: $main-font;
+    font-size: 30px;
+}
+
+h4 {
+    font-family: $header-font;
+    font-size: 18px;
+    text-align: left;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: inherit;
+    color: inherit;
+    margin: 0 auto;
+
+}
+
+p {}
+
+/* ---  --- */
+
+.slideUp {
+    animation-name: slideUp;
+    -webkit-animation-name: slideUp;
+
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+
+    visibility: visible !important;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slideUp {
+    0% {
+        -webkit-transform: translateY(100%);
+    }
+
+    100% {
+        -webkit-transform: translateY(0%);
+    }
+}

@@ -1,0 +1,272 @@
+/*--- Variables --- */
+/*--- Sections --- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  background: black;
+  color: white;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.section {
+  padding: 5% 11%;
+  overflow: hidden;
+}
+
+.banner .left {
+  width: 55% !important;
+}
+.banner .right {
+  width: 35% !important;
+  padding: 3% 5%;
+}
+
+.how {
+  background-color: #171717;
+}
+
+.faqs {
+  background: #171717;
+}
+.faqs .question {
+  margin: 30px auto;
+}
+.faqs #question {
+  font-weight: bold;
+}
+
+/* ---  Navigation --- */
+.primary-nav {
+  width: 90%;
+  margin: 0 auto;
+  float: clear;
+  overflow: auto;
+}
+.primary-nav ul {
+  display: inline-block;
+  float: right;
+  margin-top: 3%;
+  list-style: none;
+}
+.primary-nav li {
+  display: inline-block;
+  padding: 15px 20px;
+  color: white;
+}
+.primary-nav li:last-child a {
+  border: 1px solid white !important;
+  padding: 10px 35px !important;
+}
+.primary-nav li:last-child a:hover {
+  background-color: white !important;
+  color: black;
+  opacity: 1;
+}
+.primary-nav a:hover {
+  opacity: 0.5;
+}
+.primary-nav h1 {
+  width: 30%;
+  float: left;
+  color: white;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+/* --- Buttons --- */
+#banner-btn {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  margin-top: 30px;
+  padding: 15px 40px;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+}
+
+/* --- Images --- */
+#logo {
+  width: 20%;
+  height: auto;
+}
+
+#banner {
+  width: 100%;
+}
+
+#icon {
+  width: 70px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+#how {
+  width: 500px;
+}
+
+/* --- Forms --- */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  margin: 6px 0 16px;
+  resize: none;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: transparent;
+  color: black;
+  padding: 10px 30px;
+  border: 3px solid #de3131;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* --- Columns --- */
+.two-column {
+  float: clear;
+  overflow: auto;
+  margin-top: 20px;
+}
+.two-column .left {
+  float: left;
+  width: 45%;
+}
+.two-column .right {
+  float: right;
+  width: 45%;
+}
+
+.three-column {
+  margin: 20px auto;
+  overflow: hidden;
+}
+.three-column .left {
+  float: left;
+  width: 30%;
+}
+.three-column .right {
+  float: right;
+  width: 30%;
+}
+.three-column .center {
+  display: inline-block;
+  width: 30%;
+}
+
+.row {
+  display: table;
+  width: 100%;
+}
+
+.col {
+  display: table-cell;
+  padding: 16px;
+  vertical-align: middle;
+  width: 50%;
+}
+
+/*--- Typography --- */
+body {
+  font-family: "Cousine", monospace;
+  font-size: 16px;
+}
+
+h1 {
+  font-family: "Cousine", monospace;
+  font-size: 50px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: "Cousine", monospace;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px auto 30px;
+}
+
+h2::after {
+  background: #de3131 none repeat scroll 0 0;
+  content: "";
+  display: block;
+  height: 5px;
+  margin: 15px auto;
+  width: 50px;
+}
+
+h3 {
+  font-family: "Cousine", monospace;
+  font-size: 30px;
+}
+
+h4 {
+  font-family: "Product Sans", sans-serif;
+  font-size: 18px;
+  text-align: left;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: inherit;
+  color: inherit;
+  margin: 0 auto;
+}
+
+/* ---  --- */
+.slideUp {
+  animation-name: slideUp;
+  -webkit-animation-name: slideUp;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  visibility: visible !important;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+  }
+}
+
+/*# sourceMappingURL=output.css.map */
