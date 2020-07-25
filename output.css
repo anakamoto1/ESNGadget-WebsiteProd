@@ -67,17 +67,20 @@ body {
 .primary-nav li:last-child a:hover {
   background-color: white !important;
   color: black;
-  opacity: 1;
+}
+.primary-nav a {
+  padding: 10px 0;
 }
 .primary-nav a:hover {
-  opacity: 0.5;
+  color: #b81111;
+  border-bottom: 3px solid #b81111;
 }
 .primary-nav h1 {
-  width: 30%;
+  width: 15%;
   float: left;
   color: white;
   font-size: 20px;
-  margin-top: 50px;
+  margin-top: 4%;
 }
 
 /* --- Buttons --- */
@@ -90,6 +93,10 @@ body {
   font-size: inherit;
   font-weight: 700;
   font-family: inherit;
+}
+#banner-btn:hover {
+  background-color: white;
+  color: black;
 }
 
 /* --- Images --- */
@@ -129,7 +136,7 @@ input[type=submit] {
   background-color: transparent;
   color: black;
   padding: 10px 30px;
-  border: 3px solid #de3131;
+  border: 3px solid #b81111;
   cursor: pointer;
   font-family: inherit;
   font-size: inherit;
@@ -213,7 +220,7 @@ h2 {
 }
 
 h2::after {
-  background: #de3131 none repeat scroll 0 0;
+  background: #b81111 none repeat scroll 0 0;
   content: "";
   display: block;
   height: 5px;
