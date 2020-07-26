@@ -4,42 +4,38 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> ESN GADGETS </title>
     <meta name="description" content="ESN Gadget's Website">
     <link rel="stylesheet" href="output.css">
     <link href="https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 </head>
 
-<script>
-    $(window).scroll(function() {
-        $('.three-column').each(function() {
-            var pos = $(this).offset().top;
-
-            var topOfWindow = $(window).scrollTop();
-            if (pos < topOfWindow + 1000) {
-                $(this).addClass("slideUp");
-            }
-        });
-    });
-</script>
 
 <body>
     <div class="header">
         <nav class="primary-nav">
-
-            <h1> ESN GADGETS</h1>
-
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#about">HOW DOES IT WORK</a></li>
-                <li><a href="#projects">FEATURES</a></li>
-                <li><a href="#projects">FAQS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
+            <div class="primary-nav left">
+                <a href="#">
+                    <h1>ESN GADGETS</h1>
+                </a>
+            </div>
+            <div class="primary-nav right">
+                <input type="checkbox" id="menu">
+                <label for="menu"></label>
+                <div class="menu-content">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">How it works</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">FAQS</a></li>
+                        <li id="contact"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-
-
     </div>
     <div class="wrapper">
 
@@ -70,7 +66,7 @@
                     <img src="imgs/image.jpg" id="banner">
                 </div>
             </div>
-            
+
             <div class="row">
                 <div class="col">
                     <h3> Step: 2 </h3>
@@ -81,7 +77,7 @@
                     <img src="imgs/image.jpg" id="banner">
                 </div>
             </div>
-            
+
             <div class="row">
                 <div class="col">
                     <h3> Step: 3 </h3>
@@ -92,7 +88,7 @@
                     <img src="imgs/image.jpg" id="banner">
                 </div>
             </div>
-            
+
             <div class="row">
                 <div class="col">
                     <h3> Step: 4 </h3>
@@ -114,19 +110,19 @@
             <h2>FAQS</h2>
             <p id="question">Q: My net keeps slipping out from the base.</p>
             <p id="answer"> A: Slightly bend the 2 prongs apart creating a slight V. The wider the V, the more tension it will create. When inserting the rods back into the base, lightly squeeze them together and insert them in to the desired length. This will create tension and hold net in place.</p>
-            
+
             <p id="question">Q: The angle of the catch net does not line up with the chamber.</p>
             <p id="answer"> A: For most users, sliding the net in/out from the guides should align the to the ejection port. If more adjustments are needed, the nets frame is made from aluminum and can be bent. If after positioning the base on your forearm, and adjusting the depth of the net into the base, you can adjust the position by slightly bending the frame to your desired location. Note: REMOVE THE NET FROM THE BASE BEFORE ATTEMPTING TO MAKE ANY ADJUSTMENTS. </p>
-            
+
             <p id="question">Q: My net arrived out of shape.
-</p>
+            </p>
             <p id="answer"> A: The net does have some memory and if not stored in its sewn shape, it will create some deformity. Try pulling at the corners to stretch it back into shape. If it still doesn’t hold its shape, you can spray some clear varnish/clear coat on it. Adjust the deformed area and let the clear coat dry. This should fix it unless the frame is bent.
-</p>
-            
+            </p>
+
             <p id="question">Q: Does the base and net come in different colors?</p>
             <p id="answer"> A: At this time, only black is available. We are looking into making some different colors schemes.
-Please check back later.
-</p>
+                Please check back later.
+            </p>
         </div>
 
         <div class="section contact">

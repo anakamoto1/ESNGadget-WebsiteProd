@@ -33,10 +33,11 @@ body {
     overflow: hidden;
 }
 
-.header {}
+.header {
+    overflow: hidden;
+}
 
 .banner {
-
     .left {
         width: 55% !important;
     }
@@ -73,53 +74,56 @@ footer {}
 
 .primary-nav {
     width: 90%;
-    margin: 0 auto;
-    float: clear;
     overflow: auto;
+    margin: 0 auto;
+    color: white;
 
     ul {
-        display: inline-block;
-        float: right;
-        margin-top: 3%;
+        color: white;
         list-style: none;
+        padding: 20px 0 0;
+        color: white;
+        font-weight: 700;
 
     }
 
     li {
         display: inline-block;
         padding: 15px 20px;
-        color: white;
     }
 
-    li:last-child {
-        a {
-            border: 1px solid white !important;
-            padding: 10px 35px !important;
-
-
-        }
-
-        a:hover {
-            background-color: white !important;
-            color: black;
-        }
-    }
-    
     a {
+        font-family: $main-font;
+        text-transform: uppercase;
         padding: 10px 0;
+
+        &:hover {
+            color: $red;
+            border-bottom: 3px solid $red;
+        }
+
+
     }
 
-    a:hover {
-        color: $red;
-        border-bottom: 3px solid $red;
+    #contact a {
+        border: 1px solid white;
+        padding: 10px 35px;
+
+        &:hover {
+            color: black;
+            background: white;
+        }
     }
 
     h1 {
-        width: 15%;
-        float: left;
+        font-size: 30px;
+        padding: 20px 0;
         color: white;
-        font-size: 20px;
-        margin-top: 4%;
+        margin-top: 20px;
+    }
+
+    input#menu {
+        display: none;
     }
 }
 
@@ -137,7 +141,7 @@ footer {}
     font-size: inherit;
     font-weight: 700;
     font-family: inherit;
-    
+
     &:hover {
         background-color: white;
         color: black;
@@ -205,6 +209,18 @@ input[type=submit]:hover {
 
 
 /* --- Columns --- */
+.primary-nav {
+    .left {
+        float: left;
+        width: 20%;
+    }
+
+    .right {
+        float: right;
+        width: 80%;
+        text-align: right;
+    }
+}
 
 .two-column {
     float: clear;
@@ -314,37 +330,76 @@ a {
 
 p {}
 
-/* ---  --- */
+/* --- Media Queries --- */
 
-.slideUp {
-    animation-name: slideUp;
-    -webkit-animation-name: slideUp;
+@media screen and (max-width: 970px) {
 
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-
-    animation-timing-function: ease;
-    -webkit-animation-timing-function: ease;
-
-    visibility: visible !important;
-}
-
-@keyframes slideUp {
-    0% {
-        transform: translateY(100%);
+    h1,
+    h2 {
+        font-size: 20px;
     }
 
-    100% {
-        transform: translateY(0%);
+    .primary-nav label {
+        display: block;
+        cursor: pointer;
+        background: url(imgs/menu.png) no-repeat right center;
+        background-size: 30px;
+        margin: 20px auto;
+        padding: 50px 0 50px 50px;
     }
-}
 
-@-webkit-keyframes slideUp {
-    0% {
-        -webkit-transform: translateY(100%);
+    .primary-nav {
+        .right {
+            width: 70%;
+        }
+
+        .left {
+            width: 30%;
+        }
+
+        ul {
+            padding: 0 !important;
+            float: clear;
+        }
+
+        li {
+            margin: 0 auto;
+            text-align: right;
+            float: right;
+            clear: right;
+            width: 100%;
+        }
+
+        #contact a {
+            border: none !important;
+            text-align: right !important;
+            padding: 0!important;
+        }
     }
 
-    100% {
-        -webkit-transform: translateY(0%);
+    .menu-content {
+        max-height: 0;
+        display: block;
+        overflow: hidden;
+        margin: 0 auto;
+
     }
+
+    /* Toggle Effect */
+    input:checked ~ label {
+        background-image: url(imgs/close.png);
+    }
+
+    input:checked ~ .menu-content {
+        max-height: 100%;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+
+
+
+
+
+
+
 }

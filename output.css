@@ -20,6 +20,10 @@ body {
   overflow: hidden;
 }
 
+.header {
+  overflow: hidden;
+}
+
 .banner .left {
   width: 55% !important;
 }
@@ -45,42 +49,46 @@ body {
 /* ---  Navigation --- */
 .primary-nav {
   width: 90%;
-  margin: 0 auto;
-  float: clear;
   overflow: auto;
+  margin: 0 auto;
+  color: white;
 }
 .primary-nav ul {
-  display: inline-block;
-  float: right;
-  margin-top: 3%;
+  color: white;
   list-style: none;
+  padding: 20px 0 0;
+  color: white;
+  font-weight: 700;
 }
 .primary-nav li {
   display: inline-block;
   padding: 15px 20px;
-  color: white;
-}
-.primary-nav li:last-child a {
-  border: 1px solid white !important;
-  padding: 10px 35px !important;
-}
-.primary-nav li:last-child a:hover {
-  background-color: white !important;
-  color: black;
 }
 .primary-nav a {
+  font-family: "Cousine", monospace;
+  text-transform: uppercase;
   padding: 10px 0;
 }
 .primary-nav a:hover {
   color: #b81111;
   border-bottom: 3px solid #b81111;
 }
+.primary-nav #contact a {
+  border: 1px solid white;
+  padding: 10px 35px;
+}
+.primary-nav #contact a:hover {
+  color: black;
+  background: white;
+}
 .primary-nav h1 {
-  width: 15%;
-  float: left;
+  font-size: 30px;
+  padding: 20px 0;
   color: white;
-  font-size: 20px;
-  margin-top: 4%;
+  margin-top: 20px;
+}
+.primary-nav input#menu {
+  display: none;
 }
 
 /* --- Buttons --- */
@@ -156,6 +164,16 @@ input[type=submit]:hover {
 }
 
 /* --- Columns --- */
+.primary-nav .left {
+  float: left;
+  width: 20%;
+}
+.primary-nav .right {
+  float: right;
+  width: 80%;
+  text-align: right;
+}
+
 .two-column {
   float: clear;
   overflow: auto;
@@ -248,31 +266,61 @@ a {
   margin: 0 auto;
 }
 
-/* ---  --- */
-.slideUp {
-  animation-name: slideUp;
-  -webkit-animation-name: slideUp;
-  animation-duration: 1s;
-  -webkit-animation-duration: 1s;
-  animation-timing-function: ease;
-  -webkit-animation-timing-function: ease;
-  visibility: visible !important;
-}
+/* --- Media Queries --- */
+@media screen and (max-width: 970px) {
+  h1,
+h2 {
+    font-size: 20px;
+  }
 
-@keyframes slideUp {
-  0% {
-    transform: translateY(100%);
+  .primary-nav label {
+    display: block;
+    cursor: pointer;
+    background: url(imgs/menu.png) no-repeat right center;
+    background-size: 30px;
+    margin: 20px auto;
+    padding: 50px 0 50px 50px;
   }
-  100% {
-    transform: translateY(0%);
+
+  .primary-nav .right {
+    width: 70%;
   }
-}
-@-webkit-keyframes slideUp {
-  0% {
-    -webkit-transform: translateY(100%);
+  .primary-nav .left {
+    width: 30%;
   }
-  100% {
-    -webkit-transform: translateY(0%);
+  .primary-nav ul {
+    padding: 0 !important;
+    float: clear;
+  }
+  .primary-nav li {
+    margin: 0 auto;
+    text-align: right;
+    float: right;
+    clear: right;
+    width: 100%;
+  }
+  .primary-nav #contact a {
+    border: none !important;
+    text-align: right !important;
+    padding: 0 !important;
+  }
+
+  .menu-content {
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  /* Toggle Effect */
+  input:checked ~ label {
+    background-image: url(imgs/close.png);
+  }
+
+  input:checked ~ .menu-content {
+    max-height: 100%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
   }
 }
 
