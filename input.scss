@@ -39,11 +39,11 @@ body {
 
 .banner {
     .left {
-        width: 55% !important;
+        width: 55%;
     }
 
     .right {
-        width: 35% !important;
+        width: 35%;
         padding: 3% 5%;
     }
 }
@@ -336,7 +336,7 @@ p {}
 
     h1,
     h2 {
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .primary-nav label {
@@ -351,6 +351,7 @@ p {}
     .primary-nav {
         .right {
             width: 70%;
+            margin-top: -110px;
         }
 
         .left {
@@ -396,7 +397,11 @@ p {}
         border-bottom: 1px solid white;
     }
 
-
+    .two-column, .three-column, .right, .left {
+        float: none!important;
+        margin: 0 auto;
+        text-align: center;
+    width: 90%!important}
 
 
 
