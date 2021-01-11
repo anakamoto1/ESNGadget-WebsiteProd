@@ -1,16 +1,17 @@
 /*--- Variables --- */
 
-$header-font: 'Product Sans',
-sans-serif;
+$header-font: 'Cousine',
+monospace;
 $main-font: 'Cousine',
 monospace;
 
-$nav-footer-spacing: 30px 0;
+$nav-footer-spacing: 1% 11%;
 $section-spacing: 5% 11%;
 
 $red: #b81111;
-$light-grey: #ededed;
-$grey: #171717;
+$light-grey: #2b2f40;
+$grey: #1d202b;
+$dark-grey:black;
 
 /*--- Sections --- */
 html {
@@ -20,8 +21,9 @@ html {
 body {
     margin: 0 auto;
     padding: 0;
-    background: black;
+    background: $grey;
     color: white;
+
 }
 
 .wrapper {
@@ -35,29 +37,36 @@ body {
 
 .header {
     overflow: hidden;
+    background: $dark-grey;
+    padding: $nav-footer-spacing;
 }
 
 .banner {
-    margin: 0 auto;
 
     .left {
-        width: 70%;
+        margin: 0 auto;
+        text-align: left!important;
     }
 
     .right {
-        width: 30%;
-        padding: 9% 5% 9% 0;
+        padding: 4% 0% 6% 2%;
     }
 }
 
 .how {
-    background-color: $grey;
+    background-color: $dark-grey;
+    
+    .row {
+        background: $grey;
+        margin: 30px 0;
+        padding: 2%;
+    }
 }
 
 .features {}
 
 .faqs {
-    background: $grey;
+    background: none;
 
     .question {
         margin: 30px auto;
@@ -68,31 +77,43 @@ body {
     }
 }
 
-.contact {
-    h3{
-        font-size: 40px!important;
+.contact1 {
+    background: $dark-grey;
+    text-align: center;
+}
+
+.contact2 {
+    background: white;
+    h3 {
+        font-size: 40px !important;
     }
-    
-        margin: 0 auto;
+
+    margin: 0 auto;
 
     .left {
-        width: 40%!important;
+        width: 40% !important;
     }
 
     .right {
-        width: 50%!important;
+        width: 50% !important;
         margin-top: 5%;
+        padding: 3%;
+        background: $grey;
+        color: white;
     }
 }
 
-footer {}
+footer {
+    padding-left: 11%;
+}
 
 /* ---  Navigation --- */
 
 .primary-nav {
-    width: 90%;
-    overflow: auto;
+    width: 100%;
+    overflow: hidden;
     margin: 0 auto;
+    
     color: white;
 
     ul {
@@ -100,7 +121,7 @@ footer {}
         list-style: none;
         padding: 20px 0 0;
         color: white;
-        font-weight: 700;
+
 
     }
 
@@ -111,11 +132,12 @@ footer {}
 
     a {
         font-family: $main-font;
+        font-weight: 300;
         text-transform: uppercase;
         padding: 10px 0;
 
         &:hover {
-            color: $red;
+            color: white;
             border-bottom: 3px solid $red;
         }
 
@@ -123,12 +145,14 @@ footer {}
     }
 
     #contact a {
-        border: 1px solid white;
+        border: 3px solid $red;
+        background: $red;
         padding: 10px 35px;
 
         &:hover {
-            color: black;
-            background: white;
+            border: 3px solid $red;
+            color: white;
+            background: none;
         }
     }
 
@@ -147,22 +171,48 @@ footer {}
 
 /* --- Buttons --- */
 
-#banner-btn {
-    background-color: transparent;
-    border: 1px solid white;
+#nav-btn {
+    font-size: inherit;
+    font-weight: 3300;
+    font-family: inherit;
+
+
+    border: 3px solid $red;
+    background: $red;
+    padding: 10px 30px;
+    margin-left: 20px;
     color: white;
 
-    margin-top: 30px;
-    padding: 15px 40px;
+    &:hover {
+        border: 3px solid $red;
+        color: white;
+        background: none;
+    }
+}
+
+#banner-btn {
 
     font-size: inherit;
     font-weight: 700;
     font-family: inherit;
 
+    margin-top: 40px;
+
+    border: 3px solid $red;
+    background: $red;
+    padding: 10px 35px;
+    color: white;
+
+
     &:hover {
-        background-color: white;
-        color: black;
+        border: 3px solid $red;
+        color: white;
+        background: none;
     }
+    
+    
+    
+    
 }
 
 /* --- Images --- */
@@ -184,7 +234,7 @@ footer {}
 }
 
 #how {
-    width: 500px;
+    //width: 500px;
 }
 
 video {
@@ -201,36 +251,52 @@ video {
 input[type=text],
 select,
 textarea {
-    width: 100%;
-    border: 1px solid #ccc;
-    margin: 10px 0 16px;
+    width: 90%;
+    border: 1px solid black;
+    background: white;
+    color: $dark-grey;
+    padding: 10px 20px;
+    margin: 10px 0 30px;
     resize: none;
+    font-family: $main-font;
+    font-size: 18px;
 }
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-    background-color: transparent;
+    background-color: $red;
     color: white;
-    padding: 10px 30px;
+    padding: 10px 35px;
     border: 3px solid $red;
     cursor: pointer;
 
     font-family: inherit;
     font-size: inherit;
     font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-    background-color: $red;
+    background-color: transparent;
+    color: $dark-grey;
+    border: 3px solid $red;
 }
 
 /* Add a background color and some padding around the form */
 .container {
-    border-radius: 5px;
     background-color: none;
+    color: $dark-grey!important;
+    width: 50%;
     margin: 0 auto;
-    padding: 10px;
+    padding: 0 5%;
+}
+
+label {
+    
+    font-weight: 700;
+    
 }
 
 
@@ -304,13 +370,14 @@ input[type=submit]:hover {
 
 body {
     font-family: $main-font;
-    font-size: 16px;
+    font-weight: 300;
+    font-size: 18px;
 
 }
 
 h1 {
     font-family: $main-font;
-    font-size: 50px;
+    font-size: 60px;
     margin: 0 auto;
 }
 
@@ -376,12 +443,12 @@ p {}
 
     .primary-nav {
         .right {
-            width: 70%;
+            width: 50%;
             margin-top: -110px;
         }
 
         .left {
-            width: 30%;
+            width: 10%;
         }
 
         ul {

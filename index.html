@@ -27,11 +27,11 @@
                 <label for="menu"></label>
                 <div class="menu-content">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">How it works</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">FAQS</a></li>
-                        <li id="contact"><a href="#">Contact</a></li>
+                        <li><a href="#primavy-nav">Home</a></li>
+                        <li><a href="#how">How it works</a></li>
+                        <li><a href="https://www.ebay.com/itm/Pistol-Brass-Shell-Catcher/143913651029?hash=item2181ec0b55:g:9G8AAOSwcSxfrJ6M">SHOP</a></li>
+                        <li><a href="#faqs">FAQS</a></li>
+                        <input id="nav-btn" type="submit" value="CONTACT US" onclick="window.location='#contact1';" />
                     </ul>
                 </div>
             </div>
@@ -39,31 +39,33 @@
     </div>
     <div class="wrapper">
 
-        <div class="banner">
+        <div class="section banner">
 
             <div class="two-column">
                 <div class="two-column left">
-                    <video controls>
-                        <source src="video/esn_video.mp4" type="video/mp4">
-                        <source src="video/esn_video.mp4" type="video/ogg">
-                        Your browser does not support the video tag.
-                    </video>
+                    <image>
+                        <img src="https://via.placeholder.com/500x400">
+                    </image>
                 </div>
                 <div class="two-column right">
-                    <h1> BRASS CATCHER </h1>
+                    <h1> PISTOL BRASS CATCHER </h1>
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 
-                    <button id="banner-btn">Watch Video</button>
+                    <input id="banner-btn" type="submit" value="Watch Video" onclick="window.location='https://www.youtube.com/watch?v=vHRupmYoJ2c&feature=youtu.be';" />
                 </div>
             </div>
         </div>
 
-        <div class="section how">
+        <div class="section how" id="how">
             <h2>How does it work</h2>
             <div class="row">
                 <div class="col">
                     <h3> Step 1: INSTALL </h3>
-                    <p>To install the arm support, start by placing your hand into the Velcro straps as shown in fig 1. </p>
+                    <p>To install the arm support, start by placing your hand into the Velcro straps as shown in fig 1.
+
+                        For a smaller tight fit, place hand and arm inside both straps leaving 2 straps on the inside of your forearm. You may need to adjust the velcro for this. See fig 1aFig
+
+                        Position the brace on your forearm as shown in fig 2. Adjust the straps to the desired tightness. </p>
                 </div>
 
                 <div class="col">
@@ -74,7 +76,8 @@
             <div class="row">
                 <div class="col">
                     <h3> Step 2: POSITION</h3>
-                    <p> Position the brace on your forearm as shown in fig 2. Adjust the straps to the desired tightness. </p>
+                    <p> Slide the net into the 2 guide rails. The height and angle of the net can be adjusted by rotating the arm support. If the nets distance and angle that it sits from your hand are not to your satisfaction, you may need to remove the net from the base and make small bends to get a perfect fit.
+                    </p>
                 </div>
 
                 <div class="col">
@@ -85,9 +88,9 @@
             <div class="row">
                 <div class="col">
                     <h3> Step 3: ADJUST</h3>
-                    <p> Slide the net into the 2 guide rails. The height and angle of the net can be adjusted by rotating the arm support. If the nets distance and angle that it sits from your hand are not to your satisfaction, you may need to remove the net from the base and make small bends to get a perfect fit.</p>
+                    <p> The tension holding the net inside the slide rails can be adjusted by spreading the rods apart to form a slight V. </p>
                     <small>
-                        *Caution is needed when doing this….the frame is made from aluminum and can be bent. Do this at your own risk. Bending it back and forth too many times may break it. </small>
+                        * Caution is needed when doing this….the frame is made from aluminum and can be bent. Do this at your own risk. Bending it back and forth too many times may break it. </small>
                 </div>
 
                 <div class="col">
@@ -98,7 +101,7 @@
             <div class="row">
                 <div class="col">
                     <h3> Step 4: LINE UP </h3>
-                    <p> Line up the far edge of the catch net with the beginning of pistols ejection port. See fig. 4.
+                    <p> Line up the far edge of the catch net with the beginning of pistols ejection port.
                     </p>
                 </div>
 
@@ -109,52 +112,61 @@
 
         </div>
 
-        <div class="section features">
+        <!--
+        <div class="section features" id="features">
             <h2>Features</h2>
         </div>
+-->
 
-        <div class="section faqs">
+        <div class="section faqs" id="faqs">
             <h2>FAQS</h2>
-            <p id="question">Q: My net keeps slipping out from the base.</p>
-            <p id="answer"> A: Slightly bend the 2 prongs apart creating a slight V. The wider the V, the more tension it will create. When inserting the rods back into the base, lightly squeeze them together and insert them in to the desired length. This will create tension and hold net in place.</p>
+            <div class="question">
+                <p id="question">Q: My net keeps slipping out from the base.</p>
+                <p id="answer"> A: Slightly bend the 2 prongs apart creating a slight V. The wider the V, the more tension it will create. When inserting the rods back into the base, lightly squeeze them together and insert them in to the desired length. This will create tension and hold net in place.</p>
+            </div>
 
-            <p id="question">Q: The angle of the catch net does not line up with the chamber.</p>
-            <p id="answer"> A: For most users, sliding the net in/out from the guides should align the to the ejection port. If more adjustments are needed, the nets frame is made from aluminum and can be bent. If after positioning the base on your forearm, and adjusting the depth of the net into the base, you can adjust the position by slightly bending the frame to your desired location. Note: REMOVE THE NET FROM THE BASE BEFORE ATTEMPTING TO MAKE ANY ADJUSTMENTS. </p>
+            <div class="question">
+                <p id="question">Q: The angle of the catch net does not line up with the chamber.</p>
+                <p id="answer"> A: For most users, sliding the net in/out from the guides should align the to the ejection port. If more adjustments are needed, the nets frame is made from aluminum and can be bent. If after positioning the base on your forearm, and adjusting the depth of the net into the base, you can adjust the position by slightly bending the frame to your desired location. Note: REMOVE THE NET FROM THE BASE BEFORE ATTEMPTING TO MAKE ANY ADJUSTMENTS. </p>
+            </div>
 
-            <p id="question">Q: My net arrived out of shape.
-            </p>
-            <p id="answer"> A: The net does have some memory and if not stored in its sewn shape, it will create some deformity. Try pulling at the corners to stretch it back into shape. If it still doesn’t hold its shape, you can spray some clear varnish/clear coat on it. Adjust the deformed area and let the clear coat dry. This should fix it unless the frame is bent.
-            </p>
+            <div class="question">
+                <p id="question">Q: My net arrived out of shape.
+                </p>
+                <p id="answer"> A: The net does have some memory and if not stored in its sewn shape, it will create some deformity. Try pulling at the corners to stretch it back into shape. If it still doesn’t hold its shape, you can spray some clear varnish/clear coat on it. Adjust the deformed area and let the clear coat dry. This should fix it unless the frame is bent.
+                </p>
+            </div>
 
-            <p id="question">Q: Does the base and net come in different colors?</p>
-            <p id="answer"> A: At this time, only black is available. We are looking into making some different colors schemes.
-                Please check back later.
-            </p>
+            <div class="question">
+                <p id="question">Q: Does the base and net come in different colors?</p>
+                <p id="answer"> A: At this time, only black is available. We are looking into making some different colors schemes.
+                    Please check back later.
+                </p>
+            </div>
         </div>
 
-        <div class="section contact">
-            <div class="two-column">
-                <div class="two-column left">
-                    <h3>CONTACT US</h3>
-                    <p>To get in touch with use, please fill out the form and we will respond as soon as we can. Alternatively, you can send us an email at...</p>
+        <div class="section contact1" id="contact1">
+            <h2>CONTACT US</h2>
+                    <p>To get in touch with use, please fill out the form below and we will respond as soon as we can. Alternatively, you can send us an email at...</p>
 
                     <p>Email: esngadgets@email.com</p>
-                </div>
-                <div class="two-column right">
+        </div>
+        
+        <div class="section contact2" id="contact2">
                     <div class="container">
                         <form action="action_page.php">
+                            <p>* ALL FIELDS REQUIRED</p><br/>
+                            <label for="fname">FIRST + LAST NAME</label>
+                            <input type="text" id="fname" name="firstname" placeholder="John Doe">
 
-                            <label for="fname">Name</label>
-                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                            <label for="lname">EMAIL</label>
+                            <input type="text" id="lname" name="lastname" placeholder="example@email.com">
 
-                            <label for="lname">Email</label>
-                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                            <label for="country">SUBJECT</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Subject...">
 
-                            <label for="country">Subject</label>
-                            <input type="text" id="lname" name="lastname" placeholder="Subject">
-
-                            <label for="subject">Subject</label>
-                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                            <label for="subject">MESSAGE</label>
+                            <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
 
                             <input type="submit" value="Submit">
 
@@ -163,9 +175,6 @@
                 </div>
             </div>
 
-        </div>
-
-    </div>
 
     <footer>
         <div class="two-column">

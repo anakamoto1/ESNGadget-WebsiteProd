@@ -7,7 +7,7 @@ html {
 body {
   margin: 0 auto;
   padding: 0;
-  background: black;
+  background: #1d202b;
   color: white;
 }
 
@@ -22,25 +22,29 @@ body {
 
 .header {
   overflow: hidden;
+  background: black;
+  padding: 1% 11%;
 }
 
-.banner {
-  margin: 0 auto;
-}
 .banner .left {
-  width: 70%;
+  margin: 0 auto;
+  text-align: left !important;
 }
 .banner .right {
-  width: 30%;
-  padding: 9% 5% 9% 0;
+  padding: 4% 0% 6% 2%;
 }
 
 .how {
-  background-color: #171717;
+  background-color: black;
+}
+.how .row {
+  background: #1d202b;
+  margin: 30px 0;
+  padding: 2%;
 }
 
 .faqs {
-  background: #171717;
+  background: none;
 }
 .faqs .question {
   margin: 30px auto;
@@ -49,24 +53,37 @@ body {
   font-weight: bold;
 }
 
-.contact {
+.contact1 {
+  background: black;
+  text-align: center;
+}
+
+.contact2 {
+  background: white;
   margin: 0 auto;
 }
-.contact h3 {
+.contact2 h3 {
   font-size: 40px !important;
 }
-.contact .left {
+.contact2 .left {
   width: 40% !important;
 }
-.contact .right {
+.contact2 .right {
   width: 50% !important;
   margin-top: 5%;
+  padding: 3%;
+  background: #1d202b;
+  color: white;
+}
+
+footer {
+  padding-left: 11%;
 }
 
 /* ---  Navigation --- */
 .primary-nav {
-  width: 90%;
-  overflow: auto;
+  width: 100%;
+  overflow: hidden;
   margin: 0 auto;
   color: white;
 }
@@ -75,7 +92,6 @@ body {
   list-style: none;
   padding: 20px 0 0;
   color: white;
-  font-weight: 700;
 }
 .primary-nav li {
   display: inline-block;
@@ -83,20 +99,23 @@ body {
 }
 .primary-nav a {
   font-family: "Cousine", monospace;
+  font-weight: 300;
   text-transform: uppercase;
   padding: 10px 0;
 }
 .primary-nav a:hover {
-  color: #b81111;
+  color: white;
   border-bottom: 3px solid #b81111;
 }
 .primary-nav #contact a {
-  border: 1px solid white;
+  border: 3px solid #b81111;
+  background: #b81111;
   padding: 10px 35px;
 }
 .primary-nav #contact a:hover {
-  color: black;
-  background: white;
+  border: 3px solid #b81111;
+  color: white;
+  background: none;
 }
 .primary-nav h1 {
   font-size: 30px;
@@ -109,19 +128,36 @@ body {
 }
 
 /* --- Buttons --- */
-#banner-btn {
-  background-color: transparent;
-  border: 1px solid white;
+#nav-btn {
+  font-size: inherit;
+  font-weight: 3300;
+  font-family: inherit;
+  border: 3px solid #b81111;
+  background: #b81111;
+  padding: 10px 30px;
+  margin-left: 20px;
   color: white;
-  margin-top: 30px;
-  padding: 15px 40px;
+}
+#nav-btn:hover {
+  border: 3px solid #b81111;
+  color: white;
+  background: none;
+}
+
+#banner-btn {
   font-size: inherit;
   font-weight: 700;
   font-family: inherit;
+  margin-top: 40px;
+  border: 3px solid #b81111;
+  background: #b81111;
+  padding: 10px 35px;
+  color: white;
 }
 #banner-btn:hover {
-  background-color: white;
-  color: black;
+  border: 3px solid #b81111;
+  color: white;
+  background: none;
 }
 
 /* --- Images --- */
@@ -141,10 +177,6 @@ body {
   padding: 5px;
 }
 
-#how {
-  width: 500px;
-}
-
 video {
   float: left;
   margin: 0 auto;
@@ -158,35 +190,49 @@ video {
 input[type=text],
 select,
 textarea {
-  width: 100%;
-  border: 1px solid #ccc;
-  margin: 10px 0 16px;
+  width: 90%;
+  border: 1px solid black;
+  background: white;
+  color: black;
+  padding: 10px 20px;
+  margin: 10px 0 30px;
   resize: none;
+  font-family: "Cousine", monospace;
+  font-size: 18px;
 }
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-  background-color: transparent;
+  background-color: #b81111;
   color: white;
-  padding: 10px 30px;
+  padding: 10px 35px;
   border: 3px solid #b81111;
   cursor: pointer;
   font-family: inherit;
   font-size: inherit;
   font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: #b81111;
+  background-color: transparent;
+  color: black;
+  border: 3px solid #b81111;
 }
 
 /* Add a background color and some padding around the form */
 .container {
-  border-radius: 5px;
   background-color: none;
+  color: black !important;
+  width: 50%;
   margin: 0 auto;
-  padding: 10px;
+  padding: 0 5%;
+}
+
+label {
+  font-weight: 700;
 }
 
 /* --- Columns --- */
@@ -246,12 +292,13 @@ input[type=submit]:hover {
 /*--- Typography --- */
 body {
   font-family: "Cousine", monospace;
-  font-size: 16px;
+  font-weight: 300;
+  font-size: 18px;
 }
 
 h1 {
   font-family: "Cousine", monospace;
-  font-size: 50px;
+  font-size: 60px;
   margin: 0 auto;
 }
 
@@ -278,7 +325,7 @@ h3 {
 }
 
 h4 {
-  font-family: "Product Sans", sans-serif;
+  font-family: "Cousine", monospace;
   font-size: 18px;
   text-align: left;
   margin: 0;
@@ -309,11 +356,11 @@ h2 {
   }
 
   .primary-nav .right {
-    width: 70%;
+    width: 50%;
     margin-top: -110px;
   }
   .primary-nav .left {
-    width: 30%;
+    width: 10%;
   }
   .primary-nav ul {
     padding: 0 !important;
