@@ -45,7 +45,7 @@ body {
 
     .left {
         margin: 0 auto;
-        text-align: left!important;
+        text-align: left !important;
     }
 
     .right {
@@ -55,7 +55,7 @@ body {
 
 .how {
     background-color: $dark-grey;
-    
+
     .row {
         background: $grey;
         margin: 30px 0;
@@ -85,6 +85,7 @@ body {
 
 .contact2 {
     background: white;
+
     h3 {
         font-size: 40px !important;
     }
@@ -114,7 +115,7 @@ footer {
     width: 100%;
     overflow: hidden;
     margin: 0 auto;
-    
+
     color: white;
 
     ul {
@@ -210,10 +211,10 @@ footer {
         color: white;
         background: none;
     }
-    
-    
-    
-    
+
+
+
+
 }
 
 /* --- Images --- */
@@ -289,16 +290,16 @@ input[type=submit]:hover {
 /* Add a background color and some padding around the form */
 .container {
     background-color: none;
-    color: $dark-grey!important;
+    color: $dark-grey !important;
     width: 50%;
     margin: 0 auto;
     padding: 0 5%;
 }
 
 label {
-    
+
     font-weight: 700;
-    
+
 }
 
 
@@ -427,7 +428,7 @@ p {}
 
 /* --- Media Queries --- */
 
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 1055px) {
 
     h1,
     h2 {
@@ -439,18 +440,21 @@ p {}
         cursor: pointer;
         background: url(imgs/menu.png) no-repeat right center;
         background-size: 30px;
-        margin: 20px auto;
+        margin: 2% auto;
         padding: 50px 0 50px 50px;
     }
 
     .primary-nav {
         .right {
-            width: 50%;
-            margin-top: -110px;
+            width: 40%;
+            margin-top: -16%;
         }
 
-        .left {
-            width: 10%;
+        img {
+            width: 70% !important;
+            text-align: left !important;
+            float: left !important;
+
         }
 
         ul {
@@ -495,15 +499,35 @@ p {}
     .two-column,
     .three-column,
     .right,
-    .left {
+    .left, .row {
         float: none !important;
         margin: 0 auto;
         text-align: center;
-        width: 90% !important
+        width: 90% !important;
+    }
+    
+    .row{
+        display: inline-block;
+        width: 100%!important;
+        margin: 0 auto!important;
+        
+        img {
+            width: 100%!important;
+        }
     }
 
+}
 
+@media screen and (max-width: 700px) {
 
+    .primary-nav {
+        img {
+            margin-top: 4% !important;
+        }
 
+        .right {
+            margin-top: -30% !important;
+        }
+    }
 
 }
