@@ -529,5 +529,15 @@ p {}
             margin-top: -30% !important;
         }
     }
+    
+       .row{
+        display: inline-block;
+        width: 100%!important;
+        margin: 0 auto!important;
+        
+        img {
+            width: 100%!important;
+        }
+    }
 
 }

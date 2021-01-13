@@ -427,6 +427,15 @@ h2 {
   .primary-nav .right {
     margin-top: -30% !important;
   }
+
+  .row {
+    display: inline-block;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+  .row img {
+    width: 100% !important;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */
